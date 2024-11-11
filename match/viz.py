@@ -42,9 +42,10 @@ def plot_matches(
         viz2d.plot_keypoints([result_dict["all_kpts0"], result_dict["all_kpts1"]], colors="red", ps=2)
 
     viz2d.plot_matches(result_dict["inlier_kpts0"], result_dict["inlier_kpts1"], color="lime", lw=0.2)
+
     
-    print("Matches: ", len(result_dict['inlier_kpts0']))
-    print("After usac: ", len(result_dict['matched_kpts1']))
+    print("Matches: ", len(result_dict['matched_kpts1']))
+    print("After usac: ", len(result_dict['inlier_kpts0']))
     print("True matches: ", len(result_dict['inlier_kpts0'])/len(result_dict['matched_kpts1']))
     
 
