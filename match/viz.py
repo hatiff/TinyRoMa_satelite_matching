@@ -46,7 +46,7 @@ def plot_matches(
     
     print("Matches: ", len(result_dict['matched_kpts1']))
     print("After usac: ", len(result_dict['inlier_kpts0']))
-    print("True matches: ", len(result_dict['inlier_kpts0'])/len(result_dict['matched_kpts1']))
+    print("True matches: ", len(result_dict['inlier_kpts0'])/len(result_dict['matched_kpts1']) * 100, "%")
     
 
 
