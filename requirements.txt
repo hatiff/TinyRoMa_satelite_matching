@@ -1,0 +1,8 @@
+matplotlib
+numpy
+torch>=2.2.0
+torchvision
+opencv-python
+kornia_moons
+pillow
+yacs
